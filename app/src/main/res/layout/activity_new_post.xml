@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saka.myapplication.NewPostActivity">
+
+    <EditText
+        android:id="@+id/np_edt_title"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/title"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/np_edt_body"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_below="@+id/np_edt_title"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/body"
+        android:inputType="textMultiLine" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/np_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16sp" />
+
+</RelativeLayout>

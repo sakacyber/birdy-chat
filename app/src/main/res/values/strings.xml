@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Birdy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="splash_screen">SplashScreen</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="no_text"> </string>
+
+    //////////////// Activity ////////////////////
+    <string name="chat">Chat</string>
+    <string name="photo">Photo</string>
+    <string name="online">Online</string>
+    <string name="contact">Contact</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Settings</string>
+    <string name="about">About</string>
+
+    /////////////// jjj ///////////////////
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="phone">Phone</string>
+    <string name="hobby">Hobby</string>
+    <string name="date">Date</string>
+    <string name="save">Save edit</string>
+
+    <string name="title">Title</string>
+    <string name="body">Write your post &#8230;</string>
+
+
+</resources>

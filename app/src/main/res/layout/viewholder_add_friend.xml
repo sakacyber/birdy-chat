@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/vh_add_friend_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_logo_blue" />
+
+    <TextView
+        android:id="@+id/vh_add_friend_txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vh_add_friend_img"
+        android:layout_toEndOf="@+id/vh_add_friend_img"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/vh_add_friend_txt_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to send request"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_toRightOf="@+id/vh_add_friend_img"
+        android:layout_toEndOf="@+id/vh_add_friend_img"
+        android:layout_below="@+id/vh_add_friend_txt_name"/>
+
+</RelativeLayout>

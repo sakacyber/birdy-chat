@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/pf_img_pf"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_logo"
-        android:layout_gravity="center" />
+    <RelativeLayout
+        android:id="@+id/pf_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/pf_txt_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/pf_img_pf"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logo_blue" />
 
-    <TextView
-        android:id="@+id/pf_txt_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/log_in"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/pf_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pf_img_pf"
+            android:layout_toRightOf="@+id/pf_img_pf"
+            android:maxLines="1"
+            android:paddingTop="18dp"
+            android:text="@string/name"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/pf_txt_bd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/pf_txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pf_txt_name"
+            android:layout_toEndOf="@+id/pf_img_pf"
+            android:layout_toRightOf="@+id/pf_img_pf"
+            android:maxLines="1"
+            android:paddingTop="12dp"
+            android:text="@string/email_hint"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/pf_txt_contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chat"
-        android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pf_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 
 </LinearLayout>

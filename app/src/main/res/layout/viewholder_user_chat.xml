@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/vh_user_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/vh_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/vh_user_img"
+        android:layout_toRightOf="@+id/vh_user_img"
+        android:maxLength="280"
+        android:maxLines="1"
+        android:paddingTop="16dp"
+        android:text="@string/chat"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vh_user_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vh_user_name"
+        android:layout_toEndOf="@+id/vh_user_img"
+        android:layout_toRightOf="@+id/vh_user_img"
+        android:maxLines="1"
+        android:paddingTop="8dp"
+        android:text="@string/chat"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/vh_user_time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:maxLines="1"
+        android:paddingTop="8dp"
+        android:text="@string/chat"
+        android:visibility="gone" />
+
+</RelativeLayout>

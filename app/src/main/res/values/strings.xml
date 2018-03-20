@@ -13,6 +13,7 @@
 
     //////////////// Activity ////////////////////
     <string name="chat">Chat</string>
+    <string name="news">News</string>
     <string name="photo">Photo</string>
     <string name="online">Online</string>
     <string name="contact">Contact</string>
@@ -22,14 +23,10 @@
 
     /////////////// jjj ///////////////////
     <string name="name">Name</string>
-    <string name="country">Country</string>
     <string name="phone">Phone</string>
-    <string name="hobby">Hobby</string>
-    <string name="date">Date</string>
-    <string name="save">Save edit</string>
+    <string name="search">Search</string>
 
     <string name="title">Title</string>
     <string name="body">Write your post &#8230;</string>
-
 
 </resources>

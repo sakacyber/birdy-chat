@@ -2,11 +2,12 @@ package com.example.saka.myapplication;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,23 +17,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.saka.myapplication.model.User;
+import com.example.saka.myapplication.model.myFirebase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText edtName;
     private EditText edtEmail;
     private EditText edtPassword;
-    private Button btnSignUp;
-    private TextView txtLogIn;
     private FirebaseAuth auth;
-    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +48,10 @@ public class RegisterActivity extends AppCompatActivity {
         edtName = (EditText) findViewById(R.id.su_edt_name);
         edtEmail = (EditText) findViewById(R.id.su_edt_mail);
         edtPassword = (EditText) findViewById(R.id.su_edt_password);
-        btnSignUp = (Button) findViewById(R.id.su_btn_sign_up);
-        txtLogIn = (TextView) findViewById(R.id.su_txt_login);
+        Button btnSignUp = (Button) findViewById(R.id.su_btn_sign_up);
+        TextView txtLogIn = (TextView) findViewById(R.id.su_txt_login);
 
         auth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,21 +97,15 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void onAuthSuccess(FirebaseUser user){
-        String username = usernameFromEmail(user.getEmail());
         // write new user
+        String username = edtName.getText().toString();
         User newUser = new User(user.getUid(), username, user.getEmail());
-        databaseReference.child("users").child(user.getUid()).setValue(newUser);
+        myFirebase.writeNewUser(user.getUid(), newUser);
+        Log.d("REGISTER", "write new user success");
 
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), MainActivity.class)
+                .putExtra("name", edtName.getText().toString()));
         finish();
-    }
-
-    private String usernameFromEmail(String email){
-        if (email.contains("@")){
-            return email.split("@")[0];
-        } else {
-            return email;
-        }
     }
 
     private boolean validateForm(){

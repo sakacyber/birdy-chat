@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="24dp"
-        tools:context="com.example.saka.myapplication.RegisterActivity">
+        tools:context="com.example.saka.myapplication.ui.RegisterActivity">
 
         <EditText
             android:id="@+id/su_edt_name"

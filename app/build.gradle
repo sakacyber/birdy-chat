@@ -3,6 +3,8 @@ apply plugin: "kotlin-android"
 
 android {
 
+    compileSdk 33
+
     defaultConfig {
         applicationId "com.blockdev.birdy"
         minSdkVersion 21

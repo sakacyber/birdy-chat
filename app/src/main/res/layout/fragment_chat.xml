@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.saka.myapplication.FragmentChat">
+    tools:context="com.example.saka.myapplication.com.blockdev.saka.myapplication.FragmentChat">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chat_recycler_view"

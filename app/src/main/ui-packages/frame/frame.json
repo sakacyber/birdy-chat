@@ -1,0 +1,487 @@
+{
+  "name": "frame",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "1lRTMYJBSMzb2ExNVkK24t",
+    "node": "1:35",
+    "version": "3473576660",
+    "component-id": "e6e5636b585d74dfab9c04564d7eea2604a3f7b8"
+  },
+  "default": "Property 1=Default",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Frame4"
+      },
+      {
+        "type": "group",
+        "id": "Frame3"
+      },
+      {
+        "type": "group",
+        "id": "Frame2"
+      },
+      {
+        "type": "group",
+        "id": "Frame1"
+      },
+      {
+        "type": "text",
+        "id": "More"
+      },
+      {
+        "type": "image",
+        "id": "Frame41"
+      },
+      {
+        "type": "text",
+        "id": "Chat"
+      },
+      {
+        "type": "image",
+        "id": "Frame31"
+      },
+      {
+        "type": "text",
+        "id": "News"
+      },
+      {
+        "type": "image",
+        "id": "Frame21"
+      },
+      {
+        "type": "text",
+        "id": "Home"
+      },
+      {
+        "type": "image",
+        "id": "Frame11"
+      }
+    ],
+    "modes": {
+      "Property 1=Default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "10.0",
+              "offset-x": "0.0",
+              "offset-y": "0.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "is-structured": "false",
+            "children": [
+              "Frame4",
+              "Frame3",
+              "Frame2",
+              "Frame1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame4",
+            "margin": {
+              "left": "349.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "More",
+              "Frame41"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame3",
+            "margin": {
+              "left": "233.0",
+              "right": "116.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Chat",
+              "Frame31"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame2",
+            "margin": {
+              "left": "116.0",
+              "right": "233.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "News",
+              "Frame21"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame1",
+            "margin": {
+              "right": "349.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Home",
+              "Frame11"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "More",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.6"
+            },
+            "text-content": "More",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "12.0",
+            "line-height": "1.1666666412353515",
+            "typeface": "Arial",
+            "case": "upper"
+          },
+          {
+            "id": "Frame41",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-9.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "frame41.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Chat",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.6"
+            },
+            "text-content": "Chat",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "12.0",
+            "line-height": "1.1666666412353515",
+            "typeface": "Arial",
+            "case": "upper"
+          },
+          {
+            "id": "Frame31",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-9.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "frame31.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "News",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.6"
+            },
+            "text-content": "News",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "12.0",
+            "line-height": "1.1666666412353515",
+            "typeface": "Arial",
+            "case": "upper"
+          },
+          {
+            "id": "Frame21",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-9.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "frame21.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Home",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.6"
+            },
+            "text-content": "Home",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "12.0",
+            "line-height": "1.1666666412353515",
+            "typeface": "Arial",
+            "case": "upper"
+          },
+          {
+            "id": "Frame11",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-9.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "frame21.jpeg",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Property 1=Default",
+      "size": {
+        "width": 465.0,
+        "height": 60.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
